@@ -35,3 +35,9 @@ def position_taken?(array,index)
     return true
   end
 end
+
+Puts "Please enter 1-9:"
+input = gets
+converted_input = input_to_index(input)
+valid_move?(board,converted_input)
+puts display_board(board)
